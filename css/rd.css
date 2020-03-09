@@ -1,0 +1,26 @@
+body{
+	--darkbule: #0F0039;
+	--pink:#F618B5;
+	--cyan:#3FD4D8;
+	--red:#E84B1A;
+	--yellow:#FCCC0B;
+	--blue:#6AA8DC;
+}
+.bg-darkbule{
+	background-color: #0F0039;
+}
+.bg-blue{
+	background-color: #86DAFC;
+}
+.bg-pink{ 
+	background-color: #F618B5;
+}
+.font-darkbule{
+	color: #0F0039;
+}
+.font-blue{
+	color: #86DAFC;
+}
+.font-pink{ 
+	color: #F618B5;
+}

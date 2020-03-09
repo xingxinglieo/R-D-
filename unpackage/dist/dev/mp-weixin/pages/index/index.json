@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "error-tip": "/components/form-error-tip",
+    "my-button": "/components/watch-button",
+    "xing-input": "/components/watch-input"
+  }
+}

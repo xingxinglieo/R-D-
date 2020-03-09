@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/my/my",
+    "pages/my/information",
+    "pages/index/index",
+    "pages/regist/regist-message-first",
+    "pages/regist/regist-message-second"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTitleText": "RCD",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#A1A1A1",
+    "selectedColor": "#A1A1A1",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "表",
+        "iconPath": "static/bar/task_fill.png",
+        "selectedIconPath": "static/bar/blue/task_fill.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "static/bar/people_fill.png",
+        "selectedIconPath": "static/bar/blue/people_fill.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "cu-custom": "/components/cu-custom",
+    "tip": "/components/xing-tip",
+    "modal": "/components/xing-modal",
+    "ripple": "/components/ripple",
+    "xing-radio": "/components/xing-radio"
+  },
+  "sitemapLocation": "sitemap91.json"
+}

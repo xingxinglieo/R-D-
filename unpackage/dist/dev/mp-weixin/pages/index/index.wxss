@@ -1,0 +1,10 @@
+
+.background.data-v-1ee06f4f {
+	width: 750rpx;
+	height: 100vh;
+}
+.r_button.data-v-1ee06f4f{
+	margin-top: 120px;
+	width: 110px;
+}
+

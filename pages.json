@@ -1,0 +1,55 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/my/my",
+			"style": {}
+		},
+		{
+			"path": "pages/my/information",
+			"style": {}
+		},
+		{
+			"path": "pages/index/index",
+			"style": {}
+		}, {
+			"path": "pages/regist/regist-message-first",
+			"style": {}
+		}, {
+			"path": "pages/regist/regist-message-second",
+			"style": {}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTitleText": "RCD",
+		"navigationStyle": "custom",
+		"navigationBarTextStyle": "white"
+	},
+	"tabBar": {
+		"color": "#A1A1A1",
+		"selectedColor": "#A1A1A1",
+		"backgroundColor": "#ffffff",
+		"borderStyle": "white",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "表",
+				"iconPath": "static/bar/task_fill.png",
+				"selectedIconPath": "static/bar/blue/task_fill.png"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"text": "我的",
+				"iconPath": "static/bar/people_fill.png",
+				"selectedIconPath": "static/bar/blue/people_fill.png"
+			}
+		]
+	},
+	"usingComponts": true,
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [{
+			"name": "信息", //模式名称
+			"path": "pages/my/my", //启动页面
+			"query": "" //启动参数
+		}]
+	}
+}

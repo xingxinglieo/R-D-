@@ -1,0 +1,37 @@
+
+.myripple {
+	/* 隐藏溢出的径向渐变背景 */
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+.myrippleson {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	pointer-events: none;
+	-webkit-transform: scale(15);
+	        transform: scale(15);
+	/* 设置径向渐变 */
+	background-image: -webkit-radial-gradient(circle, #666 10%, transparent 10.1%);
+	background-image: radial-gradient(circle, #666 10%, transparent 10.1%);
+	background-repeat: no-repeat;
+	opacity: 0;
+	-webkit-transition: opacity 0.8s ease-in-out, -webkit-transform 0.25s ease-in-out;
+	transition: opacity 0.8s ease-in-out, -webkit-transform 0.25s ease-in-out;
+	transition: transform 0.25s ease-in-out, opacity 0.8s ease-in-out;
+	transition: transform 0.25s ease-in-out, opacity 0.8s ease-in-out, -webkit-transform 0.25s ease-in-out;
+}
+.myripple:active .myrippleson {
+	-webkit-transform: scale(0) !important;
+	        transform: scale(0) !important;
+	/* //设置初始状态 */
+	opacity: 1;
+	-webkit-transition: 0s;
+	transition: 0s;
+}
+

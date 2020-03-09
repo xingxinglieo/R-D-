@@ -1,0 +1,54 @@
+
+.dlbutton.data-v-0c44e2ce {
+	color: #ffffff;
+	font-size: 30rpx;
+	height: 100rpx;
+	background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6));
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6));
+	box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 5px 8px 0 rgba(0, 0, 0, 0.14), 0 1px 14px 0 rgba(0, 0, 0, 0.12);
+	line-height: 100rpx;
+	text-align: center;
+}
+.dlbutton_loading.data-v-0c44e2ce {
+	color: #ffffff;
+	font-size: 30rpx;
+	height: 100rpx;
+	box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+	line-height: 100rpx;
+	text-align: center;
+}
+.buttonBorder.data-v-0c44e2ce {
+	border: none;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 0 60rpx 0 rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 0.4s cubic-bezier(0.57, 0.19, 0.51, 0.95);
+	transition: all 0.4s cubic-bezier(0.57, 0.19, 0.51, 0.95);
+}
+/* 旋转动画 */
+.rotate_loop.data-v-0c44e2ce {
+	-webkit-transition-property: -webkit-transform;
+	-webkit-transition-duration: 1s;
+	-moz-transition-property: -moz-transform;
+	-moz-transition-duration: 1s;
+	-webkit-animation: rotate-data-v-0c44e2ce 1s linear infinite;
+	animation: rotate-data-v-0c44e2ce 1s linear infinite;
+}
+@-webkit-keyframes rotate-data-v-0c44e2ce {
+from {
+		-webkit-transform: rotate(0deg);
+}
+to {
+		-webkit-transform: rotate(360deg);
+}
+}
+@keyframes rotate-data-v-0c44e2ce {
+from {
+		-webkit-transform: rotate(0deg);
+		        transform: rotate(0deg);
+}
+to {
+		-webkit-transform: rotate(359deg);
+		        transform: rotate(359deg);
+}
+}
+

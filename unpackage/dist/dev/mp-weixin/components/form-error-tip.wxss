@@ -1,0 +1,6 @@
+
+.transition.data-v-1f9d6b2a {
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+

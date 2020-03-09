@@ -1,0 +1,1 @@
+<view class="bg-darkbule position-relative data-v-1ee06f4f" style="min-height:100vh;"><button class="position-center z-index_3000 r_button data-v-1ee06f4f" type="primary" data-event-opts="{{[['tap',[['regist',['$event']]]]]}}" bindtap="__e">进入</button><image class="background data-v-1ee06f4f" mode="aspectFill" src="/static/first.jpg"></image></view>

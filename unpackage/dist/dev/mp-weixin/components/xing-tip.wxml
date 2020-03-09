@@ -1,0 +1,1 @@
+<block wx:if="{{isShow}}"><view class=" tip tip-animation data-v-5fbbd096" style="{{'position:fixed;color:#FFFFFF;'+(_time)}}">{{tip}}</view></block>

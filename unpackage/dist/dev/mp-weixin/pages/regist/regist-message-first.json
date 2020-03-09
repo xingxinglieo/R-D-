@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "xing-button": "/components/watch-button",
+    "xing-input": "/components/watch-input"
+  }
+}

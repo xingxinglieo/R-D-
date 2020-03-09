@@ -1,0 +1,324 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* mask */
+.mask {
+	position: fixed;
+	overflow: hidden;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+.mask-fadeIn {
+	will-change: transform;
+	-webkit-animation-name: maskFadeIn;
+	        animation-name: maskFadeIn;
+	-webkit-animation-duration: 0.3s;
+	        animation-duration: 0.3s;
+	-webkit-animation-timing-function: ease-in-out;
+	        animation-timing-function: ease-in-out;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+}
+@-webkit-keyframes maskFadeIn {
+from {
+		opacity: 0;
+		visibility: hidden;
+}
+to {
+		opacity: 1;
+		visibility: visible;
+}
+}
+@keyframes maskFadeIn {
+from {
+		opacity: 0;
+		visibility: hidden;
+}
+to {
+		opacity: 1;
+		visibility: visible;
+}
+}
+.mask-fadeOut {
+	will-change: transform;
+	-webkit-animation-name: maskFadeOut;
+	        animation-name: maskFadeOut;
+	-webkit-animation-duration: 0.3s;
+	        animation-duration: 0.3s;
+	-webkit-animation-timing-function: ease-in-out;
+	        animation-timing-function: ease-in-out;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+}
+@-webkit-keyframes maskFadeOut {
+from {
+		opacity: 1;
+		visibility: visible;
+}
+to {
+		opacity: 0;
+		visibility: hidden;
+}
+}
+@keyframes maskFadeOut {
+from {
+		opacity: 1;
+		visibility: visible;
+}
+to {
+		opacity: 0;
+		visibility: hidden;
+}
+}
+/* modal */
+.sc-dialog-content {
+	position: fixed;
+	box-sizing: border-box;
+	overflow-y: auto;
+	z-index: 10001;
+	border-radius: 8rpx;
+	/* width: 80vw; */
+	max-height: 85%;
+	/* margin: auto; */
+	left: 50%;
+	/* right: 0; */
+	top: 50%;
+	background-color: #f8f8f8;
+	-webkit-transform: scale(1) translate3d(-50%, -50%, 0);
+	        transform: scale(1) translate3d(-50%, -50%, 0);
+	-webkit-transform-origin: center;
+	        transform-origin: center;
+}
+.sc-dialog-fadeIn {
+	will-change: transform;
+	-webkit-animation-name: dialogFadeIn;
+	        animation-name: dialogFadeIn;
+	-webkit-animation-duration: 0.3s;
+	        animation-duration: 0.3s;
+	-webkit-animation-timing-function: ease-in-out;
+	        animation-timing-function: ease-in-out;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+}
+@-webkit-keyframes dialogFadeIn {
+from {
+		opacity: 0;
+		-webkit-transform: translate3d(-50%, -50%, 0);
+		        transform: translate3d(-50%, -50%, 0);
+}
+to {
+		opacity: 1;
+		-webkit-transform:  translate3d(-50%, -50%, 0);
+		        transform:  translate3d(-50%, -50%, 0);
+}
+}
+@keyframes dialogFadeIn {
+from {
+		opacity: 0;
+		-webkit-transform: translate3d(-50%, -50%, 0);
+		        transform: translate3d(-50%, -50%, 0);
+}
+to {
+		opacity: 1;
+		-webkit-transform:  translate3d(-50%, -50%, 0);
+		        transform:  translate3d(-50%, -50%, 0);
+}
+}
+.sc-dialog-fadeOut {
+	will-change: transform;
+	-webkit-animation-name: dialogFadeOut;
+	        animation-name: dialogFadeOut;
+	-webkit-animation-duration: 0.3s;
+	        animation-duration: 0.3s;
+	-webkit-animation-timing-function: ease-in-out;
+	        animation-timing-function: ease-in-out;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+}
+@-webkit-keyframes dialogFadeOut {
+from {
+		opacity: 1;
+		 -webkit-transform:translate3d(-50%, -50%, 0);
+		         transform:translate3d(-50%, -50%, 0);
+}
+to {
+		opacity: 0;
+		-webkit-transform:  translate3d(-50%, -50%, 0);
+		        transform:  translate3d(-50%, -50%, 0);
+}
+}
+@keyframes dialogFadeOut {
+from {
+		opacity: 1;
+		 -webkit-transform:translate3d(-50%, -50%, 0);
+		         transform:translate3d(-50%, -50%, 0);
+}
+to {
+		opacity: 0;
+		-webkit-transform:  translate3d(-50%, -50%, 0);
+		        transform:  translate3d(-50%, -50%, 0);
+}
+}
+/* bottomModal */
+.content {
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+	padding-top: 40rpx;
+	border-top-left-radius: 40rpx;
+	border-top-right-radius: 40rpx;
+	background-color: #ffffff;
+}
+.content-fadeIn {
+	will-change: transform;
+	-webkit-animation-name: bottom-dialogFadeIn;
+	        animation-name: bottom-dialogFadeIn;
+	-webkit-animation-duration: 0.3s;
+	        animation-duration: 0.3s;
+	-webkit-animation-timing-function: ease-in-out;
+	        animation-timing-function: ease-in-out;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+}
+@-webkit-keyframes bottom-dialogFadeIn {
+from {
+		-webkit-transform: translate3d(0%, 100%, 0);
+		        transform: translate3d(0%, 100%, 0);
+}
+to {
+		-webkit-transform: translate3d(0%, 0%, 0);
+		        transform: translate3d(0%, 0%, 0);
+}
+}
+@keyframes bottom-dialogFadeIn {
+from {
+		-webkit-transform: translate3d(0%, 100%, 0);
+		        transform: translate3d(0%, 100%, 0);
+}
+to {
+		-webkit-transform: translate3d(0%, 0%, 0);
+		        transform: translate3d(0%, 0%, 0);
+}
+}
+.content-fadeOut {
+	will-change: transform;
+	-webkit-animation-name: bottom-dialogFadeOut;
+	        animation-name: bottom-dialogFadeOut;
+	-webkit-animation-duration: 0.3s;
+	        animation-duration: 0.3s;
+	-webkit-animation-timing-function: ease-in-out;
+	        animation-timing-function: ease-in-out;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+}
+@-webkit-keyframes bottom-dialogFadeOut {
+from {
+		-webkit-transform: translate3d(0%, 0%, 0);
+		        transform: translate3d(0%, 0%, 0);
+}
+to {
+		-webkit-transform: translate3d(0%, 100%, 0);
+		        transform: translate3d(0%, 100%, 0);
+}
+}
+@keyframes bottom-dialogFadeOut {
+from {
+		-webkit-transform: translate3d(0%, 0%, 0);
+		        transform: translate3d(0%, 0%, 0);
+}
+to {
+		-webkit-transform: translate3d(0%, 100%, 0);
+		        transform: translate3d(0%, 100%, 0);
+}
+}
+
