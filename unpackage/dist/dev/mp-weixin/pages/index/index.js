@@ -133,7 +133,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var errorTip = function errorTip() {return __webpack_require__.e(/*! import() | components/form-error-tip */ "components/form-error-tip").then(__webpack_require__.bind(null, /*! @/components/form-error-tip.vue */ 145));};var myButton = function myButton() {return __webpack_require__.e(/*! import() | components/watch-button */ "components/watch-button").then(__webpack_require__.bind(null, /*! @/components/watch-button.vue */ 202));};var xingInput = function xingInput() {return __webpack_require__.e(/*! import() | components/watch-input */ "components/watch-input").then(__webpack_require__.bind(null, /*! @/components/watch-input.vue */ 209));};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var errorTip = function errorTip() {return __webpack_require__.e(/*! import() | components/form-error-tip */ "components/form-error-tip").then(__webpack_require__.bind(null, /*! @/components/form-error-tip.vue */ 145));};var myButton = function myButton() {return __webpack_require__.e(/*! import() | components/watch-button */ "components/watch-button").then(__webpack_require__.bind(null, /*! @/components/watch-button.vue */ 202));};var xingInput = function xingInput() {return __webpack_require__.e(/*! import() | components/watch-input */ "components/watch-input").then(__webpack_require__.bind(null, /*! @/components/watch-input.vue */ 209));};var _default =
 
 
 
@@ -152,11 +152,16 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
     myButton: myButton,
     xingInput: xingInput },
 
-  onLoad: function onLoad() {},
+  onLoad: function onLoad() {
+
+    uni.showShareMenu();
+
+  },
   methods: {
     regist: function regist() {
       this.$Router.push({ name: 'regist-message-first' });
     } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 

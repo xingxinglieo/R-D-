@@ -145,6 +145,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
+
 var _api = _interopRequireDefault(__webpack_require__(/*! @/static_data/api.js */ 15));
 var _requestConfig = _interopRequireDefault(__webpack_require__(/*! @/request-config.js */ 16));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} //
 //
@@ -159,8 +160,8 @@ var _requestConfig = _interopRequireDefault(__webpack_require__(/*! @/request-co
 //
 //
 //
-var _default = { data: function data() {return {};}, computed: { message: function message() {return this.$store.state.message;} }, created: function created() {this.getMessage();},
-  methods: {} };exports.default = _default;
+//
+var _default = { data: function data() {return {};}, computed: { message: function message() {return this.$store.state.message;} }, created: function created() {this.getMessage();}, methods: {} };exports.default = _default;
 
 /***/ })
 

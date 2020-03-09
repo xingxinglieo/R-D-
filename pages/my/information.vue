@@ -1,4 +1,5 @@
 <template>
+	
 	<view>
 		<view class="">学号:{{ message.sno }}</view>
 		<view class="">姓名:{{ message.name }}</view>

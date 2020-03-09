@@ -17,7 +17,11 @@ export default {
 		myButton,
 		xingInput
 	},
-	onLoad() {},
+	onLoad() {
+		// #ifdef MP
+		uni.showShareMenu();
+		// #endif
+	},
 	methods: {
 		regist(){
 			this.$Router.push({name:'regist-message-first'})
