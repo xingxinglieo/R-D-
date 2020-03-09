@@ -1,1 +1,1 @@
-<view><view>{{"学号:"+sno}}</view><view>{{"姓名:"+name}}</view><view>{{"qq:"+qq}}</view><view>{{"学院:"+faculty}}</view><view>{{"专业:"+major}}</view><view>{{"方向:"+direction}}</view><view>{{"自我介绍"+selfIntroduction}}</view><empty vue-id="1" loading="{{loading}}" bind:__l="__l"></empty></view>
+<view><view>{{"学号:"+message.sno}}</view><view>{{"姓名:"+message.name}}</view><view>{{"qq:"+message.qq}}</view><view>{{"学院:"+message.faculty}}</view><view>{{"专业:"+message.major}}</view><view>{{"方向:"+message.direction}}</view><view>{{"自我介绍"+message.selfIntroduction}}</view></view>

@@ -3,6 +3,7 @@ export default {
 	alreadyInPhone:'/recruitment/commit/alreadyInPhone',
 	alreadyInOpenId:'/recruitment/commit/alreadyInOpenId',
 	getOpenId:'/recruitment/login/getId',
-	login:'/recruitment/login/openid'
+	login:'/recruitment/login/openid',
+	
 	
 }

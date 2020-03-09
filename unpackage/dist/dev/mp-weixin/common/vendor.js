@@ -9850,10 +9850,23 @@ var _commonFun = __webpack_require__(/*! @/util/commonFun.js */ 23);function _in
 _vue.default.use(_vuex.default);
 var store = new _vuex.default.Store({
   state: {
-    openid: '' },
+    openid: '',
+    message: {
+      sno: '',
+      name: '',
+      qq: '',
+      faculty: '', //学院
+      major: '', //专业
+      direction: '',
+      selfIntroduction: '' } },
+
 
   mutations: {
-    changeStateofGlobal: _commonFun.ChangeAndStorageState },
+    changeStateofGlobal: _commonFun.ChangeAndStorageState,
+    changeMessage: function changeMessage(state, playload) {
+      console.log(playload);
+      _vue.default.set(state, 'message', playload);
+    } },
 
   getters: {} });exports.store = store;
 

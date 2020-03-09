@@ -147,20 +147,33 @@ var _requestConfig = _interopRequireDefault(__webpack_require__(/*! @/request-co
 
       } });
 
-    this.getOpenId();
   },
+  created: function () {var _created = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:_context.next = 2;return (
+                this.getOpenId());case 2:_context.next = 4;return (
+                this.getMessage());case 4:case "end":return _context.stop();}}}, _callee, this);}));function created() {return _created.apply(this, arguments);}return created;}(),
+
   methods: {
-    getOpenId: function () {var _getOpenId = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {var _ref, _ref2, code, _ref3, data, _JSON$parse, openid, session_key;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:_context.next = 2;return (
-                  uni.login());case 2:_ref = _context.sent;_ref2 = _slicedToArray(_ref, 2);code = _ref2[1].code;
-                console.log(code);_context.next = 8;return (
+    getOpenId: function () {var _getOpenId = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee2() {var _ref, _ref2, code, _ref3, data, _JSON$parse, openid, session_key;return _regenerator.default.wrap(function _callee2$(_context2) {while (1) {switch (_context2.prev = _context2.next) {case 0:_context2.next = 2;return (
+                  uni.login());case 2:_ref = _context2.sent;_ref2 = _slicedToArray(_ref, 2);code = _ref2[1].code;
+                console.log(code);_context2.next = 8;return (
                   _requestConfig.default.get(_api.default.getOpenId, {
-                    params: { code: code } }));case 8:_ref3 = _context.sent;data = _ref3.data;_JSON$parse =
+                    params: { code: code } }));case 8:_ref3 = _context2.sent;data = _ref3.data;_JSON$parse =
 
                 JSON.parse(data), openid = _JSON$parse.openid, session_key = _JSON$parse.session_key;
                 this.$store.commit({
                   type: 'changeStateofGlobal',
                   stateName: 'openid',
-                  value: openid });case 12:case "end":return _context.stop();}}}, _callee, this);}));function getOpenId() {return _getOpenId.apply(this, arguments);}return getOpenId;}() },
+                  value: openid });case 12:case "end":return _context2.stop();}}}, _callee2, this);}));function getOpenId() {return _getOpenId.apply(this, arguments);}return getOpenId;}(),
+
+
+    getMessage: function () {var _getMessage = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee3() {var _ref4, data;return _regenerator.default.wrap(function _callee3$(_context3) {while (1) {switch (_context3.prev = _context3.next) {case 0:if (!(
+                this.$openid === '')) {_context3.next = 4;break;}return _context3.abrupt("return",
+                this.$Router.replace({ name: 'regist-message-first' }));case 4:_context3.next = 6;return (
+
+                  _requestConfig.default.get(_api.default.login, {
+                    params: { openid: this.$openid } }));case 6:_ref4 = _context3.sent;data = _ref4.data;
+
+                this.$store.commit('changeMessage', data);case 9:case "end":return _context3.stop();}}}, _callee3, this);}));function getMessage() {return _getMessage.apply(this, arguments);}return getMessage;}() },
 
 
 

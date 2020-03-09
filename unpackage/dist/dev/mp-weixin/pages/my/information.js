@@ -131,7 +131,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ 12));
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
 
 
 
@@ -146,35 +146,21 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 var _api = _interopRequireDefault(__webpack_require__(/*! @/static_data/api.js */ 15));
-var _requestConfig = _interopRequireDefault(__webpack_require__(/*! @/request-config.js */ 16));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}var _default =
-{
-  data: function data() {
-    return {
-      message: {
-        sno: '',
-        name: '',
-        qq: '',
-        faculty: '', //学院
-        major: '', //专业
-        direction: '',
-        selfIntroduction: '' },
-
-      loading: true };
-
-  },
-  created: function created() {
-    this.getMessage();
-  },
-  methods: {
-    getMessage: function () {var _getMessage = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {var _ref, data;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:if (!(
-                this.$openid === '')) {_context.next = 4;break;}return _context.abrupt("return",
-                this.$Router.replace({ name: 'regist-message-first' }));case 4:_context.next = 6;return (
-
-                  _requestConfig.default.get(_api.default.login, {
-                    params: { openid: this.$openid } }));case 6:_ref = _context.sent;data = _ref.data;
-
-                console.log(data);
-                this.$set(this, 'message', data);case 10:case "end":return _context.stop();}}}, _callee, this);}));function getMessage() {return _getMessage.apply(this, arguments);}return getMessage;}() } };exports.default = _default;
+var _requestConfig = _interopRequireDefault(__webpack_require__(/*! @/request-config.js */ 16));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var _default = { data: function data() {return {};}, computed: { message: function message() {return this.$store.state.message;} }, created: function created() {this.getMessage();},
+  methods: {} };exports.default = _default;
 
 /***/ })
 

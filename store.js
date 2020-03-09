@@ -4,10 +4,23 @@ import { ChangeAndStorageState } from "@/util/commonFun.js";
 Vue.use(Vuex)
 export const store = new Vuex.Store({ 
 	state: {
-		openid:''
+		openid:'',
+		message:{
+			sno: '',
+			name: '',
+			qq: '',
+			faculty: '', //学院
+			major: '', //专业
+			direction: '',
+			selfIntroduction: '',
+		},
 	},
 	mutations: {
 		changeStateofGlobal:ChangeAndStorageState,
+		changeMessage(state,playload){
+			console.log(playload);
+			Vue.set(state,'message',playload);
+		},
 	},
 	getters: {
 	}

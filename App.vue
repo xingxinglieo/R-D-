@@ -23,7 +23,10 @@ export default {
 				// #endif
 			}
 		});
-		this.getOpenId();
+	},
+	async created() {
+		await this.getOpenId();
+		await this.getMessage();
 	},
 	methods: {
 		async getOpenId() {
@@ -38,7 +41,17 @@ export default {
 				stateName:'openid',
 				value: openid
 			});
-		}
+		},
+		async getMessage(){
+			if (this.$openid === '') {
+				return this.$Router.replace({ name: 'regist-message-first' });
+			} else {
+				const { data } = await request.get(apis.login, {
+					params: { openid: this.$openid }
+				});
+				this.$store.commit('changeMessage',data);
+			}
+		},
 	},
 	onShow: function() {
 		console.log('App Show');
